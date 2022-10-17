@@ -1,0 +1,4 @@
+class OpenDirException(Exception):
+    pass
+
+

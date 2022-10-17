@@ -1,0 +1,1 @@
+FLAG = '<tr><th valign="top"><img src="/icons/blank.gif"'
