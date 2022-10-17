@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 from typing import Generator, List
 
-from constants import FLAG
+from .constants import FLAG
 
 from urllib3.exceptions import InsecureRequestWarning
 
@@ -123,9 +123,3 @@ class OpenDir:
                         scan_queue.put(file.url)
                     else:
                         yield file
-
-
-if __name__ == '__main__':
-    open = OpenDir('http://165.22.45.74:443/')
-    for file in open.crawl_host():
-        print(file)
